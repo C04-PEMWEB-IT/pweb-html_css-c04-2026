@@ -3,75 +3,176 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Archive - Michael Jackson</title>
+        <title>Michael Jackson — Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Manrope:wght@400;500;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="home.css" />
     </head>
-    <body class="cv-body">
-        <main class="cv-wrapper">
-            <a href="index.html" class="back-link">← KEMBALI KE BERANDA</a>
+    <body>
+        //navigation bar
+        <header class="navbar">
+            <a href="home.html" class="logo">
+                MJ
+                <span class="logo-sub">Est. 1958 &middot; Gary, Indiana</span>
+            </a>
 
-            <!-- Grid Kontainer ala Poster Fame (Syarat: Grid) -->
-            <div class="fame-grid">
-                <!-- KOTAK 1: FOTO -->
-                <div class="grid-item photo-box">
-                    <img src="pict/foto-1.jpg" alt="Archive 1" />
-                    <div class="photo-label">01 / ARCHIVE</div>
-                </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Beranda</a>
+                <a href="#sorotan">Sorotan</a>
+                <a href="#era">Perjalanan</a>
+                <a href="cv.html">CV</a>
+            </nav>
 
-                <!-- KOTAK 2: DESKRIPSI KARAKTER (Syarat Modul) -->
-                <div class="grid-item text-box span-2">
-                    <h2 class="cv-name">MICHAEL JACKSON</h2>
-                    <p class="cv-desc">
-                        <strong>King of Pop (1958 - 2009):</strong> Ikon budaya pop paling berpengaruh di era 80-an.
-                        Dikenal karena mendobrak batasan industri musik, merevolusi seni video musik teatrikal, dan
-                        mempopulerkan teknik tarian gaya jalanan seperti <em>Moonwalk</em> ke panggung global.
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+
+        //poster section
+        <section class="hero" id="home">
+            <div class="film-strip film-strip--top" aria-hidden="true"></div>
+
+            <div class="mosaic">
+                <div class="tile" data-frame="08"></div>
+                <div class="tile" data-frame="07"></div>
+                <div class="tile" data-frame="06"></div>
+                <div class="tile" data-frame="05"></div>
+                <div class="tile" data-frame="04"></div>
+                <div class="tile" data-frame="03"></div>
+
+                <div class="mosaic-panel">
+                    <p class="panel-kicker">Musisi &middot; Penari &middot; Ikon Budaya Pop</p>
+                    <h1 class="panel-title">Michael<br />Jackson</h1>
+                    <p class="panel-desc">
+                        Dijuluki <strong>King of Pop</strong> — suara khas, koreografi revolusioner, dan visi artistik
+                        yang mengubah wajah musik dunia.
                     </p>
+                    <a href="cv.html" class="ticket-btn">
+                        <span>Lihat CV &amp; Portofolio</span>
+                    </a>
                 </div>
 
-                <!-- KOTAK 3: EXPERIENCE (Syarat Modul) -->
-                <div class="grid-item text-box">
-                    <h3>EXPERIENCE</h3>
-                    <ul class="cv-list">
-                        <li><strong>1987 - 1989</strong><br />Bad World Tour (Pemecah Rekor Penonton)</li>
-                        <li><strong>1982</strong><br />Perilisan "Thriller" (Album Terlaris Sepanjang Masa)</li>
-                    </ul>
-                </div>
-
-                <!-- KOTAK 4: FOTO -->
-                <div class="grid-item photo-box">
-                    <img src="pict/foto-2.jpg" alt="Archive 2" />
-                </div>
-
-                <!-- KOTAK 5: EDUCATION (Syarat Modul) -->
-                <div class="grid-item text-box">
-                    <h3>EDUCATION & ORIGIN</h3>
-                    <ul class="cv-list">
-                        <li><strong>1968 - 1975</strong><br />Motown Records (Vocal & Stage Training)</li>
-                        <li><strong>1964</strong><br />Debut Musikal bersama The Jackson 5</li>
-                    </ul>
-                </div>
-
-                <!-- KOTAK 6: FOTO -->
-                <div class="grid-item photo-box">
-                    <img src="pict/foto-3.jpg" alt="Archive 3" />
-                </div>
-
-                <!-- KOTAK 7: SKILLS (Syarat Modul) -->
-                <div class="grid-item text-box">
-                    <h3>SKILLS</h3>
-                    <div class="skills-container">
-                        <span class="skill-tag">The Moonwalk</span>
-                        <span class="skill-tag">Vocal Range</span>
-                        <span class="skill-tag">Songwriting</span>
-                        <span class="skill-tag">Choreography</span>
-                        <span class="skill-tag">Pop & R&B</span>
-                    </div>
-                </div>
-
-                <!-- KOTAK 8: FOTO -->
-                <div class="grid-item photo-box">
-                    <img src="pict/foto-4.jpg" alt="Archive 4" />
-                </div>
+                <div class="tile" data-frame="02"></div>
+                <div class="tile" data-frame="01"></div>
             </div>
-        </main>
+
+            <div class="film-strip film-strip--bottom" aria-hidden="true"></div>
+        </section>
+
+        // sorotan section
+        <section class="stats" id="sorotan">
+            <div class="ticket">
+                <span class="ticket-num">13</span>
+                <span class="ticket-label">Grammy Awards</span>
+            </div>
+            <div class="ticket">
+                <span class="ticket-num">400jt+</span>
+                <span class="ticket-label">Rekaman Terjual</span>
+            </div>
+            <div class="ticket">
+                <span class="ticket-num">4</span>
+                <span class="ticket-label">Dekade Berkarya</span>
+            </div>
+            <div class="ticket">
+                <span class="ticket-num">No. 1</span>
+                <span class="ticket-label">Thriller, Album Terlaris Sepanjang Masa</span>
+            </div>
+        </section>
+
+        //journey
+        <section class="eras" id="era">
+            <div class="section-head">
+                <h2>Perjalanan Berkarya</h2>
+                <p>Lima babak yang membentuk warisan Sang Raja Pop.</p>
+            </div>
+
+            <div class="era-grid">
+                <article class="era-card">
+                    <div class="era-photo" data-frame="A"></div>
+                    <div class="era-body">
+                        <span class="era-year">1979</span>
+                        <h3>Off the Wall</h3>
+                        <p>Album solo dewasa pertama yang memadukan disco, funk, dan pop.</p>
+                    </div>
+                </article>
+
+                <article class="era-card era-card--accent">
+                    <div class="era-photo" data-frame="B"></div>
+                    <div class="era-body">
+                        <span class="era-year">1982</span>
+                        <h3>Thriller</h3>
+                        <p>Album terlaris sepanjang masa, melahirkan video musik ikonik.</p>
+                    </div>
+                </article>
+
+                <article class="era-card">
+                    <div class="era-photo" data-frame="C"></div>
+                    <div class="era-body">
+                        <span class="era-year">1987</span>
+                        <h3>Bad</h3>
+                        <p>Menegaskan status superstar global lewat tur dunia.</p>
+                    </div>
+                </article>
+
+                <article class="era-card">
+                    <div class="era-photo" data-frame="D"></div>
+                    <div class="era-body">
+                        <span class="era-year">1991</span>
+                        <h3>Dangerous</h3>
+                        <p>Eksplorasi new jack swing dan panggung teatrikal megah.</p>
+                    </div>
+                </article>
+
+                <article class="era-card">
+                    <div class="era-photo" data-frame="E"></div>
+                    <div class="era-body">
+                        <span class="era-year">1995</span>
+                        <h3>HIStory</h3>
+                        <p>Perayaan karier dalam skala orkestra dan produksi visual besar.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        //quote section
+        <section class="quote">
+            <div class="marquee">
+                <blockquote>
+                    &ldquo;Jika Anda datang ke dunia ini mengetahui Anda dicintai dan meninggalkannya dengan pengetahuan
+                    yang sama, semua yang terjadi di antaranya bisa dihadapi.&rdquo;
+                </blockquote>
+                <cite>— Michael Jackson</cite>
+            </div>
+        </section>
+
+        //cv section
+        <section class="cta-banner">
+            <h2>Kenali Lebih Dekat Perjalanan Kariernya</h2>
+            <p>Jelajahi CV kreatif lengkap dengan pengalaman, penghargaan, dan keahliannya.</p>
+            <a href="cv.html" class="ticket-btn ticket-btn--light">
+                <span>Buka Halaman CV</span>
+            </a>
+        </section>
+
+        //credits
+        <footer class="footer">
+            <p class="credit-line">Sebuah Proyek Portofolio Kreatif</p>
+            <p class="credit-line credit-line--muted">Praktikum Pemrograman Web &middot; Modul 1 &middot; 2026</p>
+            <p class="credit-line credit-line--muted">
+                Menampilkan Michael Jackson &middot; Design &amp; code dirancang oleh C04.TEAM
+            </p>
+        </footer>
+
+        <script>
+            const navToggle = document.getElementById("navToggle");
+            const navLinks = document.getElementById("navLinks");
+            navToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("open");
+                navToggle.classList.toggle("open");
+            });
+        </script>
     </body>
 </html>
