@@ -6,8 +6,8 @@
     --brown: #5c3a21;
     --brown-deep: #3b2313;
     --gold: #a37418;
-    --font-display:'Palatino Linotype', serif;
-    --font-body: 'Trebuchet MS', sans-serif;
+    --font-display: "Palatino Linotype", serif;
+    --font-body: "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -189,7 +189,10 @@ h3 {
     padding: 1.75rem;
     border: 1px solid rgba(92, 58, 33, 0.18);
     border-radius: 14px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .card:hover {
