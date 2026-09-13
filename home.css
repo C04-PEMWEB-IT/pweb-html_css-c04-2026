@@ -144,13 +144,6 @@ body {
     text-align: justify;
 }
 
-.tile[data-frame="01"], .tile[data-frame="02"], .tile[data-frame="03"], 
-.tile[data-frame="04"], .tile[data-frame="05"], .tile[data-frame="06"], 
-.tile[data-frame="07"], .tile[data-frame="08"] {
-    background-image: url('images/michael.jpeg');
-    background-size: cover;
-    background-position: center;
-}
 
 .ticket-btn {
     display: inline-block;
