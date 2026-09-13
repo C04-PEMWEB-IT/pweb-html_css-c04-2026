@@ -144,6 +144,14 @@ body {
     text-align: justify;
 }
 
+.tile[data-frame="01"], .tile[data-frame="02"], .tile[data-frame="03"], 
+.tile[data-frame="04"], .tile[data-frame="05"], .tile[data-frame="06"], 
+.tile[data-frame="07"], .tile[data-frame="08"] {
+    background-image: url('images/michael.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
 .ticket-btn {
     display: inline-block;
     background-color: var(--brown);
@@ -216,6 +224,26 @@ body {
     padding: 60px 40px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.era-photo[data-frame="A"] {
+    background-image: url('images/wall.jpeg');
+}
+
+.era-photo[data-frame="B"] {
+    background-image: url('images/thriller.jpg');
+}
+
+.era-photo[data-frame="C"] {
+    background-image: url('images/bad.png');
+}
+
+.era-photo[data-frame="D"] {
+    background-image: url('images/danger.jpeg');
+}
+
+.era-photo[data-frame="E"] {
+    background-image: url('images/history.jpg');
 }
 
 .section-head {
